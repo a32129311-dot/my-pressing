@@ -1,0 +1,50 @@
+body {
+      font-family: 'Arial', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.receipt {
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.receipt pre {
+  white-space: pre-wrap;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}

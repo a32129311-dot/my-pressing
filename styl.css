@@ -1,0 +1,153 @@
+body {
+      font-family: 'Arial', sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }#hiding {
+  height: 70px;
+  border-radius: 20px;
+  background-color: #0213CE42;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 25px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tab.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.item:hover {
+  background-color: #e8f4ff;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-price {
+  color: #2ecc71;
+  margin-top: 5px;
+}
+
+textarea, input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+  text-align: right;
+}
+
+.numbers, .actions {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.numbers {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.actions {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.clear {
+  background-color: #e74c3c;
+}
+
+.clear:hover {
+  background-color: #c0392b;
+}
+
+.print {
+  background-color: #2ecc71;
+}
+
+.print:hover {
+  background-color: #27ae60;
+}
+
+.selected {
+  background-color: #2ecc71 !important;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 18px;
+}

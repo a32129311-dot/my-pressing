@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>قائمة الوصولات</title>
+  
+  <style>
+  
+  </style>
+  <link rel="stylesheet" href="stt.css" type="text/css" media="all" />
+</head>
+<body>
+<a class="back-btn" href="ind2.html">رجوع للصفحة الرئيسية</a>
+  <div class="container">
+    <h2>📜 قائمة الوصولات</h2>
+    <div id="receiptsContainer"></div>
+    
+  </div>
+  <script>
+    const receipts = JSON.parse(localStorage.getItem('receipts') || '[]');
+    const container = document.getElementById("receiptsContainer");
+
+    if (receipts.length === 0) {
+      container.innerHTML = "<p>لا توجد وصولات محفوظة.</p>";
+    } else {
+      receipts.reverse().forEach(r => {
+        const div = document.createElement("div");
+        div.className = "receipt";
+        div.innerHTML = `
+          🧾 <strong>رقم:</strong> ${r.id}<br>
+          📅 <strong>تاريخ:</strong> ${r.date}<br>
+          👤 <strong>الاسم:</strong> ${r.name}<br>
+          📲 <strong>الرقم:</strong> ${r.number}<br>
+          💰 <strong>المجموع:</strong> ${r.total} درهم<br>
+          🧺 <pre>${r.content}</pre>`;
+    container.appendChild(div);
+  });
+}
+
+
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

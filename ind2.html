@@ -1,0 +1,52 @@
+<!DOCTYPE html><html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الورقة الذكية</title>
+  <style>
+    
+  </style>
+  <link rel="stylesheet" href="styl.css" type="text/css" media="all" />
+</head>
+<body>
+<div id="hiding">
+  <button onclick="showReceipts()">📄 عرض الوصولات</button>
+  <button id="stok" onclick="showR()"> اعطاء الوصل</button>
+</div><div class="container">
+  <div class="info-row">
+    <div>📅 التاريخ: <span id="todayDate"></span></div>
+    <div>🆔 رقم الوصل: <span id="receiptId">----</span></div>
+  </div>  <textarea id="output" placeholder="الملابس المختارة..." readonly></textarea>  <input type="tel" id="whatsappNumber" placeholder="أدخل رقم واتساب" />
+  <input type="text" id="nameclione" placeholder="أدخل اسم الزبون" />  <div class="tabs">
+    <div class="tab active" onclick="showCategory('m')">🧵 المصلوح</div>
+    <div class="tab" onclick="showCategory('s')">🧼 الصابون</div>
+  </div>  <div class="numbers">
+    <button onclick="selectNumber(1)">1</button>
+    <button onclick="selectNumber(2)">2</button>
+    <button onclick="selectNumber(3)">3</button>
+    <button onclick="selectNumber(4)">4</button>
+    <button onclick="selectNumber(5)">5</button>
+    <button onclick="selectNumber(6)">6</button>
+    <button onclick="selectNumber(7)">7</button>
+    <button onclick="selectNumber(8)">8</button>
+    <button onclick="selectNumber(9)">9</button>
+  </div>  <div class="items" id="itemsContainer"></div>  <div class="actions">
+    <button class="clear" onclick="clearAll()">مسح الكل</button>
+    <button class="print" onclick="sendToWhatsapp()">📲 إرسال واتساب</button>
+  </div>
+  <div class="total" id="total">المجموع: 0 درهم</div>
+</div><div id="receiptsList" style="margin: 20px; padding: 10px; background: #eee; border-radius: 10px; display: none;">
+  <h3>📜 قائمة الوصولات السابقة:</h3>
+  <ul id="receiptsUl" style="list-style: none; padding: 0;"></ul>
+</div>
+
+
+<script>
+  function showR() {
+  window.location.href = 'ind2.html';
+}
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
