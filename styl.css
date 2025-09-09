@@ -13,6 +13,53 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* للشاشات الصغيرة (تليفونات أقل من 600px) */
+@media (max-width: 600px) {
+  .items {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+
+  .tab {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  textarea {
+    height: 150px;
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .info-row {
+    font-size: 14px;
+  }
+
+  #fot p {
+    font-size: 14px;
+  }
+}
+
+/* للشاشات المتوسطة (تابليط أقل من 900px) */
+@media (max-width: 900px) {
+  .items {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .tab {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+}
 
 .container {
   background: #fff;
@@ -150,4 +197,8 @@ button:hover {
   font-weight: bold;
   margin-top: 10px;
   font-size: 18px;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
